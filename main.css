@@ -135,6 +135,7 @@
 
     .personal-details-title {
         color: #05325B !important;
+        page-break-after: avoid;
     }
     
     .main-subsection-title {
@@ -143,5 +144,19 @@
 
     svg.rating-checked path {
         fill: #05325B !important;
+    }
+
+    .skill-name {
+        page-break-before: avoid;
+    }
+
+    .work-details {
+        page-break-before: avoid;
+        page-break-inside: avoid;
+    }
+
+    .new-page {
+        page-break-before: always;
+        margin-top: 30px;
     }
 }
