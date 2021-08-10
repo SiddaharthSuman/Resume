@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
+    <script>
+        //Calc the exp in months and years
+        window.onload = () => {
+            const diff = new Date() - new Date('2015/11/30');
+            const numDays = diff / 1000 / 60 / 60 / 24;
+            const numYears = numDays / 365;
+            const numMonths = ((numYears - parseInt(numYears)) * 365) / 30;
+            document.getElementById('exp').innerText = `${Math.floor(numYears)} years and ${Math.ceil(numMonths)} months`;
+        }
+    </script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
@@ -55,12 +66,12 @@
                     <span class="main-subsection-title">About Me</span>
                     <hr class="topic-underliner">
                     <p class="summary-text">
-                        I am a Software Engineer III with total experience of 5.5 years and currently working with FactSet Systems India Pvt Ltd.<br/>
-                        I am a self-motivated and adaptable kind of individual who yearns to get his hands on the latest trends in technology.<br/>
-                        I am a quick learner and a team player who is neither afraid to take lead nor afraid to ask for help in case I get stuck anywhere.<br/>
-                        I possess good communication, interpersonal, and leadership skills and can effectively deal with teammates and clients.<br/>
-                        I am always willing to help others in need and motivate them and boost their morale.<br/>
-                        I like to work as a team and look forward to working with teams where I can contribute with my expertise as well as learn from.<br/>
+                        Software Engineer III with a total experience of <span id="exp"></span> and currently working with FactSet Systems India Pvt Ltd.<br/>
+                        Self-motivated and adaptable kind of individual who yearns to get his hands on the latest trends in technology.<br/>
+                        Quick learner and a team player who is neither afraid to take lead nor afraid to ask for help in case I get stuck anywhere.<br/>
+                        Possess good communication, interpersonal, and leadership skills and can effectively deal with teammates and clients.<br/>
+                        <!-- I am always willing to help others in need and motivate them and boost their morale.<br/>
+                        I like to work as a team and look forward to working with teams where I can contribute with my expertise as well as learn from.<br/> -->
                     </p>
 
                     <div class="col-sm-12 no-gutter">
@@ -80,9 +91,7 @@
                                 </div>
                                 <div class="col-sm-12 work-details">
                                     <ul>
-                                        <li>Worked on endpoint development for simple access to company's dataset</li>
-                                        <li>Worked on importing of data provided by suppliers and integrated them into the company's dataset</li>
-                                        <li>Worked on the company's financial data tool used by banks and financial institutions</li>
+                                        <li>Worked on endpoint development, data integration and creation of ui tools for the company</li>
                                     </ul>
                                 </div>
                             </div>
@@ -101,9 +110,7 @@
                                 </div>
                                 <div class="col-sm-12 work-details">
                                     <ul>
-                                        <li>Worked on web applications and mobile applications</li>
-                                        <li>Worked on development of automated tools and perform testing of web applications</li>
-                                        <li>Provided middleware support</li>
+                                        <li>Worked on creation of mobile and web applications as well as automating tasks.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -122,8 +129,7 @@
                                 </div>
                                 <div class="col-sm-12 work-details">
                                     <ul>
-                                        <li>Worked as a faculty for the institute</li>
-                                        <li>Taught the subject of Cyber Forensics and Offenses</li>
+                                        <li>Taught the subject of Cyber Forensics and Offenses, Php and JavaScript</li>
                                     </ul>
                                 </div>
                             </div>
@@ -197,14 +203,12 @@
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
-                                    <span><b>Technologies: </b>Javascript, NodeJS</span>
-                                    <br/>
+                                    <span><b>Technologies: </b>JavaScript, NodeJS</span>
+                                    |
                                     <span><b>Team Size: </b>3</span>
                                     <ul>
-                                        <li>Endpoint development for ease of use by clients to request company's dataset and query them</li>
-                                        <li>Users can alternatively use UI to perform queries and get results as well</li>
-                                        <li>Worked on three such endpoints and received appreciation by the team</li>
-                                        <li>Received 2 awards for the project</li>
+                                        <li>Endpoint creation for ease of use by clients to request company's dataset and query them</li>
+                                        <li>Worked on three such endpoints and received appreciation and 2 awards</li>
                                     </ul>
                                 </div>
                             </div>
@@ -217,11 +221,10 @@
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
                                     <span><b>Technologies: </b>Oracle SQL</span>
-                                    <br/>
+                                    |
                                     <span><b>Team Size: </b>2</span>
                                     <ul>
                                         <li>Package used to import data provided by suppliers to integrate into the company's dataset</li>
-                                        <li>Package is run periodically via cron jobs and automatically generates reports</li>
                                     </ul>
                                 </div>
                             </div>
@@ -234,13 +237,10 @@
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
                                     <span><b>Technologies: </b>Java, Php, WixToolset, Msi</span>
-                                    <br/>
+                                    |
                                     <span><b>Team Size: </b>5</span>
                                     <ul>
-                                        <li>Standalone product used by banks and financial institutions</li>
                                         <li>Worked as acting lead on the project and ensured timely delivery of tasks and resolution of issues</li>
-                                        <li>Worked on creation of custom Java packages and Msi packages</li>
-                                        <li>Worked on migration from Teamcity to Jenkins and performing build automations and deployments</li>
                                         <li>Received award for the project</li>
                                     </ul>
                                 </div>
@@ -253,14 +253,14 @@
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
-                                    <span><b>Technologies: </b>Angular 5, Bulma, CSS, HTML, Javascript, Typescript</span>
-                                    <br/>
+                                    <span><b>Technologies: </b>Angular, Bulma, Typescript</span>
+                                    |
                                     <span><b>Team Size: </b>8</span>
                                     <ul>
                                         <li>Portal for partners of the firm to be assessed on their performance and get recommendation for salary changes</li>
-                                        <li>Superiors can see a partner's summary, history and other information</li>
+                                        <!-- <li>Superiors can see a partner's summary, history and other information</li>
                                         <li>Superiors can provide a salary recommendation for partners based on their assessment</li>
-                                        <li>Worked directly with client</li>
+                                        <li>Worked directly with client</li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -268,17 +268,16 @@
 
                         <div class="row">
                             <div class="col-sm-2 tenure">
-                                <span>Profile and Rewards Web Application</span>
+                                <span>Profile and Rewards Application</span>
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
-                                    <span><b>Technologies: </b>Angular 4, Bootstrap, CSS, HTML, jQuery, Javascript, Typescript</span>
-                                    <br/>
+                                    <span><b>Technologies: </b>Angular, Bootstrap, jQuery, Typescript</span>
+                                    |
                                     <span><b>Team Size: </b>12</span>
                                     <ul>
                                         <li>Employee centric dashboard with various reports and details of the employee</li>
                                         <li>Employees can generate their compensation, health and time off related reports</li>
-                                        <li>Received appreciation from teammates and onsite team as well for good performance</li>
                                     </ul>
                                 </div>
                             </div>
@@ -286,17 +285,17 @@
 
                         <div class="row">
                             <div class="col-sm-2 tenure">
-                                <span>Geofence and Custom Plugin for Workspace Reservation</span>
+                                <span>Workspace Reservation</span>
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
                                     <span><b>Technologies: </b>Android, Ionic, Cordova</span>
-                                    <br/>
+                                    |
                                     <span><b>Team Size: </b>10</span>
                                     <ul>
                                         <li>Application for employees for reserving workspaces in their office</li>
-                                        <li>Employees can reserve workspaces on a temporary or regular basis as well</li>
-                                        <li>Employees can schedule reservation for future dates and can automatically get a reservation as soon as entering the work area</li>
+                                        <!-- <li>Employees can reserve workspaces on a temporary or regular basis as well</li> -->
+                                        <li>Employees can automatically get reservation when in proximity of workplace</li>
                                         <!-- <li>Implementation of Ionic Geofence plugin on android native side.</li>
                                         <li>Ionic plugins only work when app is running, needed to keep the geofence running when app is not.</li>
                                         <li>Successfully implemented the feature and integrated with MTC and RPC plugins as well.</li>
@@ -309,21 +308,22 @@
 
                         <div class="row">
                             <div class="col-sm-2 tenure">
-                                <span>MobileIron Downloads Report Tool</span>
+                                <span>Downloads Report Tool</span>
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
-                                    <span><b>Technologies: </b>Selenium, JavaFX, Apache POI, MobileIron, Microsoft Excel, PhantomJS</span>
-                                    <br/>
+                                    <span><b>Technologies: </b>Selenium, JavaFX, Apache POI, Microsoft Excel, PhantomJS</span>
+                                    |
                                     <span><b>Team Size: </b>1</span>
                                     <ul>
                                         <!-- <li>Based on Selenium automation framework and JavaFX</li>
                                         <li>Developed the tool by self within two weeks</li> -->
                                         <li>Automation tool that generates reports for 80+ production applications</li>
-                                        <li>Enables employees to work on other tasks and not be blocked on creating report manually</li>
+                                        <li>Reduced the time effort from 1 hour to under 5 minutes</li>
+                                        <!-- <li>Enables employees to work on other tasks and not be blocked on creating report manually</li>
                                         <li>Manual report generation blocks an employee for 1 hour and is prone to human errors</li>
                                         <li>The tool takes under 5 minutes to generate the report and is accurate every time</li>
-                                        <li>Received appreciation from offshore as well as onshore team for simplicity and time saving</li>
+                                        <li>Received appreciation from offshore as well as onshore team for simplicity and time saving</li> -->
                                         <!-- <li>The tool has a user friendly UI and requires no setup</li>
                                         <li>The tool provides the report to the user in the form of an excel sheet</li>
                                         <li>The tool also has a feature to capture screenshots so that the user can cross-verify the generated report values</li> -->
@@ -333,21 +333,21 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-2 tenure">
-                                <span>PwC Application Details Portal</span>
+                                <span>Application Details Portal</span>
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
-                                <span><b>Technologies: </b>Angular 4, Php, Servlets, Google Drive, Soap</span>
-                                <br/>
+                                <span><b>Technologies: </b>Angular, Php, Servlets, Google Drive, Soap</span>
+                                |
                                 <span><b>Team Size: </b>1</span>
                                     <ul>
-                                        <li>Portal for details of applications supported by the support team</li>
-                                        <li>Gives access to internal details of 26+ applications across many territories</li>
-                                        <li>Facility to manage applications list, ping application's soap services and manage relevant documents using integrated Google Drive support</li>
-                                        <li>Performs automatic healthcheck for all the applications</li>
+                                        <li>Portal for internal details of applications supported by the support team</li>
+                                        <!-- <li>Gives access to internal details of 26+ applications across many territories</li>
+                                        <li>Facility to manage applications list, ping application's soap services and manage relevant documents using integrated Google Drive support</li> -->
+                                        <li>Includes ability for automatic healthcheck for all the applications</li>
                                         <!-- <li>The application also has the facility to perform soap services related operations for the applications</li>
                                         <li>The application has integrated Google Drive support to allow faster access and addition of relevant documents for any application</li> -->
-                                        <li>Received appreciation from team</li>
+                                        <!-- <li>Received appreciation from team</li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -355,17 +355,15 @@
 
                         <div class="row">
                             <div class="col-sm-2 tenure">
-                                <span>Infosys Buy/Sell App for Android</span>
+                                <span>Buy/Sell App</span>
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
                                     <span><b>Technologies: </b>Android, Php, MySQL</span>
-                                    <br/>
+                                    |
                                     <span><b>Team Size: </b>5</span>
                                     <ul>
-                                        <li>App for a buy/sell platform</li>
-                                        <li>Users can post items for selling and can also see other posts</li>
-                                        <li>Users can show interest in an item for sale and contact the seller</li>
+                                        <li>App for a buy/sell platform for company employees</li>
                                     </ul>
                                 </div>
                             </div>
@@ -386,13 +384,15 @@
                                 </div>
                                 <div class="col-sm-12 work-details">
                                     <ul>
-                                        <li>Speaker for workshop on "Android Application Development" for EXTC faculties</li>
-                                        <li>Speaker for workshop on "Android Application Development" for CMPN and INFT faculties</li>
+                                        <!-- <li>Speaker for workshop on "Android Application Development" for college faculties</li> -->
+                                        <!-- <li>Speaker for workshop on "Android Application Development" for EXTC faculties</li>
+                                        <li>Speaker for workshop on "Android Application Development" for CMPN and INFT faculties</li> -->
                                         <li>Conducted Training and Placement Session on "C++" for final year students</li>
                                         <li>Held the posts of Assistant Technical Head and Technical Head for Computer Society of India, Atharva</li>
-                                        <li>Speaker for workshop on "Java Primer" organised by Computer Society of India, Atharva</li>
+                                        <li>Speaker for workshop on "Java Primer", "Backend Web Development" and "Android Application Development" organised by Computer Society of India, Atharva</li>
+                                        <!-- <li>Speaker for workshop on "Java Primer" organised by Computer Society of India, Atharva</li>
                                         <li>Speaker for workshop on "Backend Web Development" organised by Computer Society of India, Atharva</li>
-                                        <li>Speaker for workshop on "Android Application Development" organised by Computer Society of India, Atharva</li>
+                                        <li>Speaker for workshop on "Android Application Development" organised by Computer Society of India, Atharva</li> -->
                                         <li>Organised Google Dev Fest for Google Developer's Group</li>
                                     </ul>
                                 </div>
@@ -467,18 +467,19 @@
                     
                         <div class="col-sm-6 skill-name">
                             <ul>
+                                <li>JavaScript</li>
                                 <li>Angular</li>
-                                <li>Bulma</li>
-                                <li>Java Swing</li>
-                                <li>JavaFX</li>
+                                <!-- <li>Bulma</li> -->
+                                <!-- <li>Java Swing</li> -->
+                                <!-- <li>JavaFX</li> -->
                             </ul>
                         </div>
                     
                         <div class="col-sm-6 skill-name">
                             <ul>
                                 <li>React</li>
-                                <li>Vue.js</li>
-                                <li>Bootstrap</li>
+                                <!-- <li>Vue.js</li> -->
+                                <!-- <li>Bootstrap</li> -->
                             </ul>
                         </div>
                     </div>
@@ -489,14 +490,15 @@
                     
                         <div class="col-sm-6 skill-name">
                             <ul>
-                                <li>Node.js</li>
-                                <li>Servlets</li>
+                                <li>Php</li>
+                                <!-- <li>Node.js</li> -->
+                                <!-- <li>Servlets</li> -->
                             </ul>
                         </div>
                     
                         <div class="col-sm-6 skill-name">
                             <ul>
-                                <li>Php</li>
+                                <!-- <li>Php</li> -->
                             </ul>
                         </div>
                     </div>
@@ -513,12 +515,12 @@
                     
                         <div class="col-sm-6 skill-name">
                             <ul>
-                                <li>Ionic</li>
+                                <!-- <li>Ionic</li> -->
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-sm-12">
+                    <!-- <div class="col-sm-12">
                         <span class="personal-details-title">Markup and Scripting Languages</span>
                         <hr class="topic-underliner">
                     
@@ -536,7 +538,7 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-sm-12">
                         <span class="personal-details-title">Programming Languages</span>
@@ -545,14 +547,14 @@
                         <div class="col-sm-6 skill-name">
                             <ul>
                                 <li>Java</li>
-                                <li>C++</li>
+                                <!-- <li>C++</li> -->
                             </ul>
                         </div>
 
                         <div class="col-sm-6 skill-name">
                             <ul>
                                 
-                                <li>Python</li>
+                                <!-- <li>Python</li> -->
                             </ul>
                         </div>
                         <!-- <div class="col-sm-4 pull-right skill-rating">
@@ -653,18 +655,18 @@
                         <div class="col-sm-6 skill-name">
                             <ul>
                                 <li>Selenium</li>
-                                <li>Coded UI</li>
+                                <!-- <li>Coded UI</li> -->
                             </ul>
                         </div>
                         <div class="col-sm-6 skill-name">
                             <ul>
-                                <li>Katalon Studio</li>
-                                <li>HP UFT</li>
+                                <!-- <li>Katalon Studio</li> -->
+                                <!-- <li>HP UFT</li> -->
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-sm-12">
+                    <!-- <div class="col-sm-12">
                         <span class="personal-details-title">Databases</span>
                         <hr class="topic-underliner">
 
@@ -676,10 +678,10 @@
                         </div>
                         <div class="col-sm-6 skill-name">
                             <ul>
-                                <li>MSSQL</li>
+                                <li>Oracle SQL</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-sm-12">
                         <span class="personal-details-title">Version Control</span>
@@ -697,7 +699,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12">
+                    <!-- <div class="col-sm-12">
                         <span class="personal-details-title">Tools</span>
                         <hr class="topic-underliner">
                         <div class="col-sm-6 skill-name">
@@ -709,7 +711,7 @@
                             <ul>
                                 <li>Jenkins</li>
                             </ul>
-                        </div>
+                        </div> -->
                         <!-- <div class="col-sm-4 pull-right skill-rating">
                             <i class="fas fa-circle rating-checked"></i>
                             <i class="fas fa-circle rating-checked"></i>
@@ -737,7 +739,7 @@
                             <i class="far fa-circle"></i>
                             <i class="far fa-circle"></i>
                         </div><br><br> -->
-                    </div>
+                    <!-- </div> -->
 
                     <div class="col-sm-12">
                         <span class="personal-details-title">IDEs and Editors</span>
@@ -746,14 +748,14 @@
                         <div class="col-sm-6 skill-name">
                             <ul>
                                 <li>Eclipse</li>
-                                <li>Atom</li>
-                                <li>Sublime Text</li>
+                                <!-- <li>Atom</li> -->
+                                <!-- <li>Sublime Text</li> -->
                             </ul>
                         </div>
                         <div class="col-sm-6 skill-name">
                             <ul>
                                 <li>Visual Studio Code</li>
-                                <li>Android Studio</li>
+                                <!-- <li>Android Studio</li> -->
                             </ul>
                         </div><br>
                     </div>
@@ -827,5 +829,4 @@
         </div>
     </div>
 </body>
-
 </html>

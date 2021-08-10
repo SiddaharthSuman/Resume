@@ -1,3 +1,6 @@
+/* body {
+    zoom: 125%;
+} */
 .arimo-font {
     font-family: 'Arimo', sans-serif;
 }
@@ -119,6 +122,11 @@
     margin-bottom: 10px;
 }
 
+.svg-logo{
+    top: .18em;
+    position: relative;
+}
+
 
 @media print {
     .header-row{
@@ -158,5 +166,18 @@
     .new-page {
         page-break-before: always;
         margin-top: 30px;
+    }
+
+    .svg-logo{
+        display: none;
+    }
+
+    .break-after {
+        break-after: page;
+    }
+
+    .break-before {
+        margin-top: 30px;
+        display: block !important;
     }
 }
