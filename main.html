@@ -16,7 +16,7 @@
         //Calc the exp in months and years
         window.onload = () => {
             const diff = new Date() - new Date('2015/11/30');
-            const numDays = diff / 1000 / 60 / 60 / 24;
+            const numDays = diff / 1000 / 3600 / 24;
             const numYears = numDays / 365;
             const numMonths = ((numYears - parseInt(numYears)) * 365) / 30;
             document.getElementById('exp').innerText = `${Math.floor(numYears)} years and ${Math.ceil(numMonths)} months`;
@@ -244,6 +244,25 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-sm-2 tenure">
+                                <span>Device Management System</span>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="col-sm-12 work-details">
+                                    <span><b>Technologies: </b>React, Ionic, Angular, Php, Java, Selenium</span>
+                                    |
+                                    <span><b>Team Size: </b>1</span>
+                                    <ul>
+                                        <li>System for tracking and management of mobile devices</li>
+                                        <!-- <li>Superiors can see a partner's summary, history and other information</li>
+                                        <li>Superiors can provide a salary recommendation for partners based on their assessment</li>
+                                        <li>Worked directly with client</li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="row">
                             <div class="col-sm-2 tenure">
@@ -270,9 +289,9 @@
                             </div>
                             <div class="col-sm-10">
                                 <div class="col-sm-12 work-details">
-                                    <span><b>Technologies: </b>Angular, Bootstrap, jQuery, Typescript</span>
+                                    <span><b>Technologies: </b>React, Bootstrap, jQuery</span>
                                     |
-                                    <span><b>Team Size: </b>12</span>
+                                    <span><b>Team Size: </b>4</span>
                                     <ul>
                                         <li>Employee centric dashboard with various reports and details of the employee</li>
                                         <li>Employees can generate their compensation, health and time off related reports</li>
@@ -448,6 +467,9 @@
 
                         <span class="personal-topic-name">E-mail</span><br/>
                         <span>siddaharthsuman@gmail.com</span><br/><br/>
+
+                        <span class="personal-topic-name">Location</span><br/>
+                        <span>Hyderabad, Telangana, India</span><br/><br/>
 
                         <span class="personal-topic-name">Date of birth</span><br/>
                         <span>December 18, 1993</span><br/><br/>
